@@ -1,11 +1,12 @@
 name: Renovate
 
-on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 5 * * 0'
-
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   workflow_dispatch:
+#   schedule:
+#     - cron: '0 5 * * 0'
+# 
+# 
 jobs:
   renovate:
     runs-on: ubuntu-latest

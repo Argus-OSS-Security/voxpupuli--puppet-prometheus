@@ -4,10 +4,11 @@
 
 name: CI
 
-on:
-  schedule:
-    - cron: '4 4 * * *'
-
+# Triggers intentionally disabled for Argus-OSS-Security.
+# on:
+#   schedule:
+#     - cron: '4 4 * * *'
+# 
 concurrency:
   group: ${{ github.ref_name }}
   cancel-in-progress: true
